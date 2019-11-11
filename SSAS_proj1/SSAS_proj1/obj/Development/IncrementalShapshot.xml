@@ -1,0 +1,138 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SSAS_proj1</Database>
+    <Server>localhost</Server>
+    <ConnectionString>DataSource=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>/NrzHfHcyCMhi+wmn4GdyUiyas8=29/05/2018 22:16:2829/05/2018 22:16:28</TimeStamp>
+        <ID>
+          <String>Light Finance DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>zDjVx9gaFafbhsxwMxT/e54CH30=29/05/2018 22:27:0829/05/2018 22:17:27</TimeStamp>
+        <ID>
+          <String>Light Finance DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>MmL8+P2Uy5Ubb0cZHSeSIUarC5g=29/05/2018 22:27:5829/05/2018 22:27:08</TimeStamp>
+        <ID>
+          <String>Dim Organization 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>HQZrsYZ8piiJ7JdOriJ0XmW0SrY=29/05/2018 22:29:5029/05/2018 22:29:12</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EOGENo1geoPwTTBYf5pfGPuN8pw=29/05/2018 22:31:4029/05/2018 22:31:40</TimeStamp>
+        <ID>
+          <String>Dim Account 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tfuJNuCaSrr4sWEwJrd9dvBSQlw=29/05/2018 22:37:0529/05/2018 22:33:59</TimeStamp>
+        <ID>
+          <String>Dim Department Group</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fjG2CXSm6u/fsi7P8earHdi/kYM=29/05/2018 22:41:0329/05/2018 22:41:03</TimeStamp>
+        <ID>
+          <String>Dim Department Group 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ySzFhIKPT3ISnx48A/gwd83u4ts=29/05/2018 22:41:0329/05/2018 22:41:03</TimeStamp>
+        <ID>
+          <String>Dim Scenario 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>fAKC/8W68/fIsl4VFA5CF4UzeL4=29/05/2018 22:41:0329/05/2018 22:41:03</TimeStamp>
+        <ID>
+          <String>Dim Organization</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>nSo+EV/ua6s1jTMiQ4V5lSFeiho=30/05/2018 02:29:2630/05/2018 02:29:26</TimeStamp>
+        <ID>
+          <String>Dim Account</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>SAIYVbahYI9jcDJagZ1b4p71i4I=30/05/2018 02:29:2630/05/2018 02:29:26</TimeStamp>
+        <ID>
+          <String>Dim Scenario</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>EKEJVPnYCi32A/znrwwWU/MPkOc=30/05/2018 02:29:2630/05/2018 02:29:26</TimeStamp>
+        <ID>
+          <String>Dim Department Group 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>ezzvEMX9xN4+85ld7JKPF3Yfr1U=29/05/2018 22:59:0829/05/2018 22:41:03MOzd1RgbZNev/nCpESnBm+4NUsM=29/05/2018 22:41:0329/05/2018 22:41:03</TimeStamp>
+        <ID>
+          <String>Light Finance DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>R3mGCGMyOnq5Tw5LCR9ZXhM0tMM=30/05/2018 03:02:2230/05/2018 02:34:07+aTYmYdf4BWy2K5p3D4C6fqz6Qw=30/05/2018 02:34:0730/05/2018 02:34:07</TimeStamp>
+        <ID>
+          <String>Light Finance DW orga_date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>ztgu13TySA4uCtR3tnGJ18JcYxc=30/05/2018 03:31:3330/05/2018 03:31:32ueZ6FEjHf+Cp9ItvZtaMW3dUEJ8=30/05/2018 03:31:3330/05/2018 03:31:32</TimeStamp>
+        <ID>
+          <String>Light Finance DW 1</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>P3VUtdftHcNI/ujfLGjKt4kX18o=29/05/2018 22:11:0129/05/2018 22:11:01</TimeStamp>
+      <ID>
+        <String>SSAS_proj1</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2018-05-30T02:31:54.716667Z</LastDeployed>
+</DeploymentSnapshot>

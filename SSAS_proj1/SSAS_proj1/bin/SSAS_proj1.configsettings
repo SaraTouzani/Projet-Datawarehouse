@@ -1,0 +1,98 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>Light Finance DW</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=LightFinanceDW</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Dim Organization 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Date</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Account 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Department Group</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Department Group 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Scenario 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Organization</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Account</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Scenario</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Department Group 2</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>Light Finance DW</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Finance</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Finance</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+        <Actions>
+          <Action>
+            <ID>Action</ID>
+            <ReportServer>&lt;&lt;Target Server&gt;&gt;</ReportServer>
+            <Path>&lt;&lt;Report Server Virtual Directory&gt;&gt;?/&lt;&lt;Path to Report&gt;&gt;</Path>
+          </Action>
+        </Actions>
+      </Cube>
+      <Cube>
+        <ID>Light Finance DW orga_date</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Finance</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Finance</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>Light Finance DW 1</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fact Finance</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fact Finance</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>
